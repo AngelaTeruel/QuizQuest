@@ -144,7 +144,7 @@ let bonusPoints = 0;
 
 let streak = 0;
 
-let timeLeft = 10;
+let timeLeft = 15;
 
 let timer;
 
@@ -489,7 +489,7 @@ function startTimer() {
 
     clearInterval(timer);
 
-    timeLeft = 10;
+    timeLeft = 15;
 
     timerElement.textContent =
         timeLeft;
