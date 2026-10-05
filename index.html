@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizQuest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- ANIMATED BACKGROUND -->
+    <!-- ============================= -->
+
+    <div class="background-shapes">
+
+        <div class="shape circle circle-1"></div>
+        <div class="shape circle circle-2"></div>
+        <div class="shape circle circle-3"></div>
+
+        <div class="shape square square-1"></div>
+        <div class="shape square square-2"></div>
+
+        <div class="shape star star-1">✦</div>
+        <div class="shape star star-2">✧</div>
+        <div class="shape star star-3">✦</div>
+
+        <div class="shape dot dot-1"></div>
+        <div class="shape dot dot-2"></div>
+        <div class="shape dot dot-3"></div>
+        <div class="shape dot dot-4"></div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- MAIN QUIZ CONTAINER -->
+    <!-- ============================= -->
+
+    <div class="quiz-container">
+
+
+        <!-- ============================= -->
+        <!-- START SCREEN -->
+        <!-- ============================= -->
+
+        <div id="start-screen">
+
+            <div class="game-icon">
+                🎮
+            </div>
+
+            <p class="small-title">
+                WELCOME TO
+            </p>
+
+            <h1>
+                QuizQuest
+            </h1>
+
+            <p class="subtitle">
+                Challenge yourself, answer the questions,
+                and become a QuizQuest Master!
+            </p>
+
+            <div class="start-info">
+
+                <div class="info-item">
+                    <span>🧠</span>
+                    <p>10 Questions</p>
+                </div>
+
+                <div class="info-item">
+                    <span>⏱️</span>
+                    <p>10 Seconds</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🏆</span>
+                    <p>Max 15 Points</p>
+                </div>
+
+            </div>
+
+            <button id="start-btn">
+                Start Quiz
+            </button>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- QUIZ SCREEN -->
+        <!-- ============================= -->
+
+        <div id="quiz-screen" class="hide">
+
+
+            <!-- HEADER -->
+
+            <div class="quiz-header">
+
+                <span id="question-number">
+                    Question 1 of 10
+                </span>
+
+                <span id="score">
+                    Score: 0/15
+                </span>
+
+            </div>
+
+
+            <!-- PROGRESS BAR -->
+
+            <div class="progress-container">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+
+            <!-- TIMER -->
+
+            <div class="timer-box">
+
+                <span class="timer-icon">
+                    ⏱️
+                </span>
+
+                <span>
+                    Time left:
+                </span>
+
+                <span id="timer">
+                    10
+                </span>
+
+                <span>
+                    s
+                </span>
+
+            </div>
+
+
+            <!-- QUESTION -->
+
+            <div class="question-box">
+
+                <div class="question-mark">
+                    ?
+                </div>
+
+                <h2 id="question">
+                    Question goes here
+                </h2>
+
+            </div>
+
+
+            <!-- ANSWERS -->
+
+            <div id="answer-buttons">
+
+                <button class="answer-btn">
+                    Answer 1
+                </button>
+
+                <button class="answer-btn">
+                    Answer 2
+                </button>
+
+                <button class="answer-btn">
+                    Answer 3
+                </button>
+
+                <button class="answer-btn">
+                    Answer 4
+                </button>
+
+            </div>
+
+
+            <!-- NEXT BUTTON -->
+
+            <button id="next-btn" disabled>
+                Next Question
+            </button>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- RESULT SCREEN -->
+        <!-- ============================= -->
+
+        <div id="result-screen" class="hide">
+
+            <div class="trophy">
+                🏆
+            </div>
+
+            <p class="small-title">
+                QUIZ FINISHED!
+            </p>
+
+            <h1>
+                Quiz Complete!
+            </h1>
+
+            <p class="result-text">
+                Your final score is
+            </p>
+
+            <div id="final-score">
+                0 / 15
+            </div>
+
+            <p id="result-message">
+                Good job!
+            </p>
+
+            <button id="restart-btn">
+                Play Again
+                <span>↻</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
